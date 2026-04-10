@@ -1,0 +1,88 @@
+{
+  "feature_set": "riskmetrics",
+  "seed": 42,
+  "n_train": 3712,
+  "n_test": 928,
+  "train_date_range": [
+    "2000-01-04",
+    "2014-10-20"
+  ],
+  "test_date_range": [
+    "2014-10-21",
+    "2018-06-27"
+  ],
+  "search_space": {
+    "layers_grid": [
+      1,
+      5,
+      10
+    ],
+    "units_grid": [
+      1,
+      5,
+      10
+    ],
+    "lr_grid": [
+      0.01,
+      0.001,
+      0.0001
+    ],
+    "dropout_grid": [
+      0.0,
+      0.2
+    ],
+    "wd_grid": [
+      0.01,
+      0.001,
+      0.0001
+    ],
+    "batch_size": 32,
+    "max_epochs": 5000,
+    "patience": 10
+  },
+  "quantiles": {
+    "0.01": {
+      "best_params": {
+        "n_layers": 1,
+        "n_units": 1,
+        "lr": 0.0001,
+        "dropout": 0.0,
+        "weight_decay": 0.0001
+      },
+      "val_loss": 0.00025366,
+      "search_time_sec": 137.9,
+      "retrain_time_sec": 0.78,
+      "retrain_epochs": 38,
+      "checkpoint": "/Users/yilin10/Library/Mobile Documents/com~apple~CloudDocs/ob_vault/ZhangChao_test/v2/results/checkpoints/mlp_riskmetrics_tau0.01.pt"
+    },
+    "0.05": {
+      "best_params": {
+        "n_layers": 1,
+        "n_units": 1,
+        "lr": 0.0001,
+        "dropout": 0.0,
+        "weight_decay": 0.001
+      },
+      "val_loss": 0.00092376,
+      "search_time_sec": 150.97,
+      "retrain_time_sec": 0.71,
+      "retrain_epochs": 35,
+      "checkpoint": "/Users/yilin10/Library/Mobile Documents/com~apple~CloudDocs/ob_vault/ZhangChao_test/v2/results/checkpoints/mlp_riskmetrics_tau0.05.pt"
+    },
+    "0.1": {
+      "best_params": {
+        "n_layers": 1,
+        "n_units": 1,
+        "lr": 0.01,
+        "dropout": 0.0,
+        "weight_decay": 0.0001
+      },
+      "val_loss": 0.00149067,
+      "search_time_sec": 152.58,
+      "retrain_time_sec": 0.1,
+      "retrain_epochs": 5,
+      "checkpoint": "/Users/yilin10/Library/Mobile Documents/com~apple~CloudDocs/ob_vault/ZhangChao_test/v2/results/checkpoints/mlp_riskmetrics_tau0.1.pt"
+    }
+  },
+  "total_time_sec": 443.04
+}

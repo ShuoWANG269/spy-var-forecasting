@@ -1,0 +1,25 @@
+{
+  "window": 500,
+  "retrain_freq": 20,
+  "seq_len": 20,
+  "feature_set": "har",
+  "hparams": {
+    "hidden_size": 64,
+    "fc_units": 32,
+    "dropout": 0.2,
+    "lr": 0.0003,
+    "weight_decay": 0.0
+  },
+  "seed": 42,
+  "n_steps": 4140,
+  "pred_date_range": [
+    "2002-01-09",
+    "2018-06-27"
+  ],
+  "last_best_epoch_per_tau": {
+    "0.01": 121,
+    "0.05": 120,
+    "0.1": 114
+  },
+  "total_time_sec": 1206.3
+}

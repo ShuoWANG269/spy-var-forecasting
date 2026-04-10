@@ -1,0 +1,88 @@
+{
+  "feature_set": "caviar_sv",
+  "seed": 42,
+  "n_train": 3711,
+  "n_test": 928,
+  "train_date_range": [
+    "2000-01-05",
+    "2014-10-20"
+  ],
+  "test_date_range": [
+    "2014-10-21",
+    "2018-06-27"
+  ],
+  "search_space": {
+    "layers_grid": [
+      1,
+      5,
+      10
+    ],
+    "units_grid": [
+      1,
+      5,
+      10
+    ],
+    "lr_grid": [
+      0.01,
+      0.001,
+      0.0001
+    ],
+    "dropout_grid": [
+      0.0,
+      0.2
+    ],
+    "wd_grid": [
+      0.01,
+      0.001,
+      0.0001
+    ],
+    "batch_size": 32,
+    "max_epochs": 5000,
+    "patience": 10
+  },
+  "quantiles": {
+    "0.01": {
+      "best_params": {
+        "n_layers": 1,
+        "n_units": 10,
+        "lr": 0.0001,
+        "dropout": 0.0,
+        "weight_decay": 0.01
+      },
+      "val_loss": 0.0002609,
+      "search_time_sec": 130.47,
+      "retrain_time_sec": 0.27,
+      "retrain_epochs": 13,
+      "checkpoint": "/Users/yilin10/Library/Mobile Documents/com~apple~CloudDocs/ob_vault/ZhangChao_test/v2/results/checkpoints/mlp_caviar_sv_tau0.01.pt"
+    },
+    "0.05": {
+      "best_params": {
+        "n_layers": 1,
+        "n_units": 5,
+        "lr": 0.01,
+        "dropout": 0.0,
+        "weight_decay": 0.0001
+      },
+      "val_loss": 0.00093342,
+      "search_time_sec": 136.07,
+      "retrain_time_sec": 0.1,
+      "retrain_epochs": 5,
+      "checkpoint": "/Users/yilin10/Library/Mobile Documents/com~apple~CloudDocs/ob_vault/ZhangChao_test/v2/results/checkpoints/mlp_caviar_sv_tau0.05.pt"
+    },
+    "0.1": {
+      "best_params": {
+        "n_layers": 1,
+        "n_units": 5,
+        "lr": 0.01,
+        "dropout": 0.0,
+        "weight_decay": 0.0001
+      },
+      "val_loss": 0.00150882,
+      "search_time_sec": 134.51,
+      "retrain_time_sec": 0.33,
+      "retrain_epochs": 16,
+      "checkpoint": "/Users/yilin10/Library/Mobile Documents/com~apple~CloudDocs/ob_vault/ZhangChao_test/v2/results/checkpoints/mlp_caviar_sv_tau0.1.pt"
+    }
+  },
+  "total_time_sec": 402.19
+}

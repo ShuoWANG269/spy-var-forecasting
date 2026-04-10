@@ -1,0 +1,34 @@
+{
+  "feature_set": "returns",
+  "window": 500,
+  "retrain_freq": 20,
+  "epochs": 300,
+  "patience": 10,
+  "batch_size": 32,
+  "best_params_per_tau": {
+    "0.01": {
+      "hidden_size": 100,
+      "fc_units": 16,
+      "seq_len": 10,
+      "dropout": 0.0,
+      "lr": 0.01,
+      "weight_decay": 0.0
+    },
+    "0.05": {
+      "hidden_size": 32,
+      "fc_units": 32,
+      "seq_len": 10,
+      "dropout": 0.0,
+      "lr": 0.01,
+      "weight_decay": 0.0
+    },
+    "0.1": {
+      "hidden_size": 100,
+      "fc_units": 64,
+      "seq_len": 20,
+      "dropout": 0.2,
+      "lr": 0.01,
+      "weight_decay": 0.0
+    }
+  }
+}
